@@ -46,7 +46,7 @@ function tocarSomErro() {
 const perguntasPorNivel = {
     1: [
         {
-            texto: "Qual país sedia a Fórmula 1 brasileira?",
+            texto: "Qual estado sedia a Fórmula 1 brasileira?",
             respostas: ["Rio de Janeiro", "São Paulo", "Brasília", "Curitiba"],
             correta: 1
         },
@@ -336,3 +336,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     carregarPergunta();
 });
+
