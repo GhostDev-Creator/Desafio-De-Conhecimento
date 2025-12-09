@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio de Conhecimento - Automobilismo</title>
+    <link rel="stylesheet" href="../../../css/automobilismo/perguntas/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="botao-voltar-container">
+            <button class="botao-voltar" aria-label="Voltar para tela inicial">
+                Voltar
+            </button>
+        </div>
+      <h1>Desafio de Conhecimento</h1>
+      <div class="nome">
+            <h1>Jogador: <span id="nome-jogador">-</span></h1>
+        </div>
+        <div class="pontuacao">
+            <p>Pontuação: <span id="pontuacao">0</span></p>
+        </div>
+      <p>Responda a pergunta abaixo:</p>
+    </header>
+
+    <main class="container">
+      <div class="pergunta">
+        <h1 id="pergunta-texto">Carregando pergunta...</h1>
+        <div class="escolha" tabindex="0" role="button" aria-pressed="false">
+          <h1>Resposta 1</h1>
+        </div>
+        <div class="escolha" tabindex="0" role="button" aria-pressed="false">
+          <h1>Resposta 2</h1>
+        </div>
+        <div class="escolha" tabindex="0" role="button" aria-pressed="false">
+          <h1>Resposta 3</h1>
+        </div>
+        <div class="escolha" tabindex="0" role="button" aria-pressed="false">
+          <h1>Resposta 4</h1>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <h1>&copy; 2025 Direitos reservados</h1>
+        <h2>Desenvolvido por: João Guilherme, Laura Lopes</h2>
+    </footer>
+    <script src="../../../js/automobilismo/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+    <script>
+      function voltarInicial() {
+          window.location.href = '../index.html';
+      }
+
+      const botaoVoltar = document.querySelector('.botao-voltar');
+      if (botaoVoltar) {
+          botaoVoltar.addEventListener('click', voltarInicial);
+          
+          botaoVoltar.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  voltarInicial();
+              }
+          });
+          
+          botaoVoltar.addEventListener('mouseenter', function() {
+              this.style.transform = 'translateY(-2px)';
+          });
+          
+          botaoVoltar.addEventListener('mouseleave', function() {
+              this.style.transform = 'translateY(0)';
+          });
+      }
+    </script>
+  </body>
+</html>

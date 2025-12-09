@@ -1,0 +1,128 @@
+:root {
+    --cor-fundo: #2c2c2c;
+    --cor-laranja: #ff6d00;
+    --cor-branco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    color: var(--cor-laranja);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.nome h1 {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    color: var(--cor-branco);
+}
+
+.pontuacao p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: var(--cor-laranja);
+}
+
+header>p {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--cor-laranja);
+}
+
+main.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.user label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: var(--cor-laranja);
+}
+
+.user input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.escolha {
+    background-color: #3a3a3a;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.escolha:hover {
+    background-color: var(--cor-laranja);
+    color: var(--cor-fundo);
+}
+
+.escolha h1 {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--cor-laranja);
+    color: var(--cor-branco);
+}
+
+footer h1 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: normal;
+}
+
+footer h2 {
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+@media (min-width: 600px) {
+    main.container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .user {
+        flex: 1 1 100%;
+    }
+
+    .escolha {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
