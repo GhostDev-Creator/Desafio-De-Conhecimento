@@ -51,6 +51,19 @@ O jogo foi desenvolvido com foco na experiência e no registro do desempenho do 
 
 ---
 
+## 💻 Como Acessar o Projeto
+
+Você tem duas opções para usar o Resolutor de Equações Quadráticas:
+
+1.  **Acesso Online (Recomendado):**
+    * Clique no link direto para o site: **https://ghostdev-creator.github.io/Calculadora/**
+2.  **Execução Local:**
+    * Baixe o repositório completo para o seu computador.
+    * Localize o arquivo principal (**`index.html`**).
+    * **Abra o arquivo `index.html`** diretamente no seu navegador de internet (Chrome, Firefox, Edge, etc.).
+
+---
+
 ## 👥 Desenvolvedores
 
 | Nome | GitHub |
